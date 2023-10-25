@@ -4,6 +4,7 @@
 #include <memory>
 #include <omp.h>
 #include <iomanip>
+#include <algorithm>
 
 
 #include "3DCurves_dll_interface.h"
