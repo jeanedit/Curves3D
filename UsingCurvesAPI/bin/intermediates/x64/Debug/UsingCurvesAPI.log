@@ -1,3 +1,5 @@
 ﻿          1 file(s) copied.
-  main_dll_2.cpp
+  main.cpp
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
   UsingCurvesAPI.vcxproj -> D:\C++test\3D_Curves\UsingCurvesAPI\bin\x64\Debug\UsingCurvesAPI.exe
