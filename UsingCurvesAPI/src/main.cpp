@@ -36,7 +36,7 @@ namespace solution {
 
 	std::vector<CurveShrPtr> PopulateCurves(std::mt19937& gen) {
 		std::uniform_real_distribution<double> parameter(1.0, 100.0);
-		std::uniform_real_distribution<int> step_param(1, 100);
+		std::uniform_int_distribution<int> step_param(1, 100);
 		std::uniform_int_distribution<int> num_of_curves(10, 1000);
 		std::uniform_int_distribution<int> curve_type(0, 2); // 3 types
 		// Generate a random number of curves
