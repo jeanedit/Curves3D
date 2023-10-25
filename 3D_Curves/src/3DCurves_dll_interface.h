@@ -7,7 +7,7 @@
 #endif
 
 #define CURVES3D_EXPORT extern "C" CURVES3D_API
-
+#include <cassert>
 static const double PI = 3.14159265359;
 
 
@@ -31,7 +31,10 @@ public:
 class CURVES3D_API Circle : public Curve3D {
 public:
 	Circle(double radius)
-		: m_Radius(radius) {}
+		: m_Radius(radius) 
+	{
+		assert(m_Radius > 0);
+	}
 
 	Point3D GetPoint(double t) const override;
 	Vector3D GetDerivative(double t) const override;
@@ -47,7 +50,11 @@ class CURVES3D_API Ellipse :public Curve3D {
 public:
 	Ellipse(double a, double b)
 		: m_SemiMajorAxis(a),
-		m_SemiMinorAxis(b) {}
+		m_SemiMinorAxis(b) 
+	{
+		assert(m_SemiMajorAxis > 0);
+		assert(m_SemiMinorAxis > 0);
+	}
 
 	Point3D GetPoint(double t) const override;
 	Vector3D GetDerivative(double t) const override;
@@ -60,7 +67,11 @@ class CURVES3D_API Helix3D : public Curve3D {
 public:
 	Helix3D(double radius, double step)
 		: m_Radius(radius),
-		m_Step(step) {}
+		m_Step(step) 
+	{
+		assert(m_Radius > 0);
+		assert(m_Step > 0);
+	}
 
 	Point3D GetPoint(double t) const override;
 	Vector3D GetDerivative(double t) const override;
