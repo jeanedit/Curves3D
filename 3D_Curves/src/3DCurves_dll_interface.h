@@ -15,10 +15,15 @@ struct Point3D {
 	double x, y, z;
 };
 
+
+struct Vector3D {
+	double x, y, z;
+};
+
 class CURVES3D_API Curve3D {
 public:
 	virtual Point3D GetPoint(double t) const = 0;
-	virtual Point3D GetDerivative(double t) const = 0;
+	virtual Vector3D GetDerivative(double t) const = 0;
 	virtual ~Curve3D() { }
 };
 
@@ -29,7 +34,7 @@ public:
 		: m_Radius(radius) {}
 
 	Point3D GetPoint(double t) const override;
-	Point3D GetDerivative(double t) const override;
+	Vector3D GetDerivative(double t) const override;
 	inline double GetRadius() const {
 		return m_Radius;
 	}
@@ -45,7 +50,7 @@ public:
 		m_SemiMinorAxis(b) {}
 
 	Point3D GetPoint(double t) const override;
-	Point3D GetDerivative(double t) const override;
+	Vector3D GetDerivative(double t) const override;
 private:
 	double m_SemiMajorAxis;
 	double m_SemiMinorAxis;
@@ -58,7 +63,7 @@ public:
 		m_Step(step) {}
 
 	Point3D GetPoint(double t) const override;
-	Point3D GetDerivative(double t) const override;
+	Vector3D GetDerivative(double t) const override;
 private:
 	double m_Radius;
 	double m_Step;

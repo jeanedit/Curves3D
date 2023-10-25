@@ -21,6 +21,12 @@ namespace solution {
 		return os;
 	}
 
+	std::ostream& operator << (std::ostream& os, Vector3D vector) {
+		os << std::fixed << std::setprecision(6) << "(" << vector.x << ", " << vector.y << ", " << vector.z << ")";
+		return os;
+	}
+
+
 	enum class CurveTypes {
 		Circle,
 		Ellipse,
@@ -92,7 +98,7 @@ namespace solution {
 			}
 
 			Point3D point = curve->GetPoint(t);
-			Point3D derivative = curve->GetDerivative(t);
+			Vector3D derivative = curve->GetDerivative(t);
 			std::cout << "Point: " << point << std::endl;
 			std::cout << "Derivative: " << derivative << std::endl;
 		}
