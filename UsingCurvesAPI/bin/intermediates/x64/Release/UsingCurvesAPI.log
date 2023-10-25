@@ -1,0 +1,7 @@
+﻿          1 file(s) copied.
+  main_dll_2.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 269 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  UsingCurvesAPI.vcxproj -> D:\C++test\3D_Curves\UsingCurvesAPI\bin\x64\Release\UsingCurvesAPI.exe
