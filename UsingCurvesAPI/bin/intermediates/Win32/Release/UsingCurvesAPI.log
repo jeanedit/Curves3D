@@ -1,8 +1,5 @@
 ﻿          1 file(s) copied.
   main_dll_2.cpp
   Generating code
-  1 of 269 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   UsingCurvesAPI.vcxproj -> D:\C++test\3D_Curves\UsingCurvesAPI\bin\Win32\Release\UsingCurvesAPI.exe

@@ -30,6 +30,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -37,12 +38,14 @@
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -50,6 +53,7 @@
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableASAN>false</EnableASAN>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -103,6 +107,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)3D_Curves\bin\$(Platform)\$(Configuration)\3D_Curves.dll" "$(OutDir)"</Command>
@@ -122,6 +127,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)3D_Curves\bin\$(Platform)\$(Configuration)\3D_Curves.dll" "$(OutDir)"</Command>
@@ -145,6 +151,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)3D_Curves\bin\$(Platform)\$(Configuration)\3D_Curves.dll" "$(OutDir)"</Command>
@@ -168,6 +175,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)3D_Curves\bin\$(Platform)\$(Configuration)\3D_Curves.dll" "$(OutDir)"</Command>
@@ -180,6 +188,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main_dll_2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LogDuration.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

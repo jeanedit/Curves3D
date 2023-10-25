@@ -3,4 +3,7 @@
   <ItemGroup>
     <ClCompile Include="src\main_dll_2.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LogDuration.h" />
+  </ItemGroup>
 </Project>
