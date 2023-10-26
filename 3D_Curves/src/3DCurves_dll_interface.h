@@ -6,7 +6,6 @@
 #define CURVES3D_API __declspec(dllimport)
 #endif
 
-#define CURVES3D_EXPORT extern "C" CURVES3D_API
 #include <cassert>
 static const double PI = 3.14159265359;
 
