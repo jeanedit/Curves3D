@@ -106,7 +106,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\x64\Release;$(SolutionDir)3D_Curves\bin\Win32\Debug;$(SolutionDir)3D_Curves\bin\Win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
@@ -126,7 +126,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\x64\Release;$(SolutionDir)3D_Curves\bin\Win32\Debug;$(SolutionDir)3D_Curves\bin\Win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
@@ -150,7 +150,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\x64\Release;$(SolutionDir)3D_Curves\bin\Win32\Debug;$(SolutionDir)3D_Curves\bin\Win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
@@ -174,7 +174,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>3D_Curves.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3D_Curves\bin\x64\Debug;$(SolutionDir)3D_Curves\bin\x64\Release;$(SolutionDir)3D_Curves\bin\Win32\Debug;$(SolutionDir)3D_Curves\bin\Win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <PreBuildEvent>
