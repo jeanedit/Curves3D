@@ -46,6 +46,7 @@ namespace solution {
 
 		// Create a container of 3D curves with random parameters
 		std::vector<CurveShrPtr> curves;
+		curves.reserve(numCurves);
 
 		for (int i = 0; i < numCurves; i++) {
 			CurveTypes type = static_cast<CurveTypes>(curve_type(gen));
@@ -72,6 +73,7 @@ namespace solution {
 
 	std::vector<CircleShrPtr> PopulateCirclesSortedByRadius(const std::vector<CurveShrPtr>& curves) {
 		std::vector<CircleShrPtr> circles;
+		circles.reserve(curves.size());
 		for (const auto& curve : curves) {
 			if (CircleShrPtr circle = std::dynamic_pointer_cast<Circle>(curve)) {
 				circles.push_back(circle);
